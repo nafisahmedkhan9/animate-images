@@ -9,6 +9,7 @@ No
 
 ### Demo App
 
+```javascript
   import React from "react"
   import ReactAnimateImages from "../src/lib"
   class Demo extends React.Component {
@@ -44,16 +45,19 @@ No
     }
   }
   export default Demo
+```
 
-### Option
+### Options
 
-images: list of images 
-framInterval: positive integre interval between showing another images defaul is 100, 
-activeImageIndex: integer Start Index of image on the given array of images default 1
-stopAfterFirstRound: boolean - Stop On page load when first round completed default false
-stopAfterEachRound: boolean - Stop on each round completed defalt false
-className: classNames
-style: styles
+Options | Type | default Value | Description
+--------|------|---------------|------------
+images | Array of Images | required | list of images 
+framInterval | positive integer | 100 | interval between showing another images 
+activeImageIndex | positive integer | 1 | Start Index of image on the given array of images (start from 1)
+stopAfterFirstRound | boolean | false | Stop On page load when first round completed
+stopAfterEachRound | boolean | false | Stop on each round completed
+className | String | "" | react className property
+style | string | {} | react style property
 
 ### Give Contribution
 
