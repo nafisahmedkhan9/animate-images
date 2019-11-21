@@ -1,5 +1,5 @@
 import React from "react"
-import ReactAnimateImages from "../src/lib"
+import ReactAnimateImages from "./lib/index"
 
 class Demo extends React.Component {
 
