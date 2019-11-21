@@ -1,13 +1,26 @@
 {
   "name": "react-animate-images",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "license": "(ISC OR GPL-3.0)",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "babel": {
+    "presets": [
+      "@babel/react"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nafisahmedkhan9/react-animate-images.git"
+  },
   "dependencies": {
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-scripts": "3.2.0"
   },
   "scripts": {
+    "publish:npm": "SET NODE_ENV=production && rm -rf dist && mkdir dist && npx babel src/lib --out-dir dist --copy-files",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
